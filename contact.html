@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - VSTravel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="VSTravelStyle.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo"><h1>VSTravel</h1></div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding:60px 0;">
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <p class="tagline">Have a question? Send us a message and we'll get back to you.</p>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="input-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit" class="btn primary">Send Message</button>
+        <div id="formMessage" aria-live="polite" style="margin-top:12px"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-logo"><h2>VSTravel</h2></div>
+    </div>
+    <div class="footer-bottom">&copy; 2025 VSTravel</div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+/* Cara 1: Menggunakan background-image (relative path) */
+.hero {
+    height: 100vh;
+    background-image: url('images/Rectangle 1.jpg'); /* Ganti dengan path relatif jika memindah file */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Cara 2: Menggunakan background shorthand (relative path) */
+.hero {
+    height: 100vh;
+    background: url('images/Rectangle 1.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Cara 3: Menggunakan inline style di HTML */
+/* Di HTML, gunakan: */
+/* <section class="hero" style="background-image: url('/path/to/onedrive rectangle 1.jpg');"> */
+
+/* Cara 4: Menggunakan div nested sebagai background */
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/Rectangle 1.jpg'); /* Use relative path to project image */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
